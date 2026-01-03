@@ -9,6 +9,7 @@ import CarDetail from "./pages/CarDetail";
 import SignIn from "./pages/SignIn";
 import SignUp from "./pages/SignUp";
 import ChooseDriver from "./pages/ChooseDriver";
+import TrackCar from "./pages/TrackCar";
 import NotFound from "./pages/NotFound";
 
 const queryClient = new QueryClient();
@@ -26,6 +27,7 @@ const App = () => (
           <Route path="/signin" element={<SignIn />} />
           <Route path="/signup" element={<SignUp />} />
           <Route path="/choose-driver" element={<ChooseDriver />} />
+          <Route path="/track/:bookingId" element={<TrackCar />} />
           {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
           <Route path="*" element={<NotFound />} />
         </Routes>
