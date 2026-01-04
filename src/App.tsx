@@ -12,7 +12,14 @@ import ChooseDriver from "./pages/ChooseDriver";
 import TrackCar from "./pages/TrackCar";
 import Payment from "./pages/Payment";
 import Confirmation from "./pages/Confirmation";
-import Admin from "./pages/Admin";
+import Notifications from "./pages/Notifications";
+import AdminDashboard from "./pages/admin/AdminDashboard";
+import AdminCars from "./pages/admin/AdminCars";
+import AdminInsight from "./pages/admin/AdminInsight";
+import AdminReimburse from "./pages/admin/AdminReimburse";
+import AdminInbox from "./pages/admin/AdminInbox";
+import AdminCalendar from "./pages/admin/AdminCalendar";
+import AdminSettings from "./pages/admin/AdminSettings";
 import NotFound from "./pages/NotFound";
 
 const queryClient = new QueryClient();
@@ -33,7 +40,14 @@ const App = () => (
           <Route path="/track/:bookingId" element={<TrackCar />} />
           <Route path="/payment" element={<Payment />} />
           <Route path="/confirmation/:bookingId" element={<Confirmation />} />
-          <Route path="/admin" element={<Admin />} />
+          <Route path="/notifications" element={<Notifications />} />
+          <Route path="/admin" element={<AdminDashboard />} />
+          <Route path="/admin/cars" element={<AdminCars />} />
+          <Route path="/admin/insight" element={<AdminInsight />} />
+          <Route path="/admin/reimburse" element={<AdminReimburse />} />
+          <Route path="/admin/inbox" element={<AdminInbox />} />
+          <Route path="/admin/calendar" element={<AdminCalendar />} />
+          <Route path="/admin/settings" element={<AdminSettings />} />
           {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
           <Route path="*" element={<NotFound />} />
         </Routes>
