@@ -10,6 +10,9 @@ import SignIn from "./pages/SignIn";
 import SignUp from "./pages/SignUp";
 import ChooseDriver from "./pages/ChooseDriver";
 import TrackCar from "./pages/TrackCar";
+import Payment from "./pages/Payment";
+import Confirmation from "./pages/Confirmation";
+import Admin from "./pages/Admin";
 import NotFound from "./pages/NotFound";
 
 const queryClient = new QueryClient();
@@ -28,6 +31,9 @@ const App = () => (
           <Route path="/signup" element={<SignUp />} />
           <Route path="/choose-driver" element={<ChooseDriver />} />
           <Route path="/track/:bookingId" element={<TrackCar />} />
+          <Route path="/payment" element={<Payment />} />
+          <Route path="/confirmation/:bookingId" element={<Confirmation />} />
+          <Route path="/admin" element={<Admin />} />
           {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
           <Route path="*" element={<NotFound />} />
         </Routes>
