@@ -3,6 +3,7 @@ import { Toaster as Sonner } from "@/components/ui/sonner";
 import { TooltipProvider } from "@/components/ui/tooltip";
 import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
+import { ThemeProvider } from "next-themes";
 import { AuthProvider } from "@/contexts/AuthContext";
 import Index from "./pages/Index";
 import Catalog from "./pages/Catalog";
@@ -27,35 +28,37 @@ const queryClient = new QueryClient();
 
 const App = () => (
   <QueryClientProvider client={queryClient}>
-    <AuthProvider>
-      <TooltipProvider>
-        <Toaster />
-        <Sonner />
-        <BrowserRouter>
-          <Routes>
-            <Route path="/" element={<Index />} />
-            <Route path="/catalog" element={<Catalog />} />
-            <Route path="/car/:id" element={<CarDetail />} />
-            <Route path="/signin" element={<SignIn />} />
-            <Route path="/signup" element={<SignUp />} />
-            <Route path="/choose-driver" element={<ChooseDriver />} />
-            <Route path="/track/:bookingId" element={<TrackCar />} />
-            <Route path="/payment" element={<Payment />} />
-            <Route path="/confirmation/:bookingId" element={<Confirmation />} />
-            <Route path="/notifications" element={<Notifications />} />
-            <Route path="/admin" element={<AdminDashboard />} />
-            <Route path="/admin/cars" element={<AdminCars />} />
-            <Route path="/admin/insight" element={<AdminInsight />} />
-            <Route path="/admin/reimburse" element={<AdminReimburse />} />
-            <Route path="/admin/inbox" element={<AdminInbox />} />
-            <Route path="/admin/calendar" element={<AdminCalendar />} />
-            <Route path="/admin/settings" element={<AdminSettings />} />
-            {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
-            <Route path="*" element={<NotFound />} />
-          </Routes>
-        </BrowserRouter>
-      </TooltipProvider>
-    </AuthProvider>
+    <ThemeProvider attribute="class" defaultTheme="system" enableSystem>
+      <AuthProvider>
+        <TooltipProvider>
+          <Toaster />
+          <Sonner />
+          <BrowserRouter>
+            <Routes>
+              <Route path="/" element={<Index />} />
+              <Route path="/catalog" element={<Catalog />} />
+              <Route path="/car/:id" element={<CarDetail />} />
+              <Route path="/signin" element={<SignIn />} />
+              <Route path="/signup" element={<SignUp />} />
+              <Route path="/choose-driver" element={<ChooseDriver />} />
+              <Route path="/track/:bookingId" element={<TrackCar />} />
+              <Route path="/payment" element={<Payment />} />
+              <Route path="/confirmation/:bookingId" element={<Confirmation />} />
+              <Route path="/notifications" element={<Notifications />} />
+              <Route path="/admin" element={<AdminDashboard />} />
+              <Route path="/admin/cars" element={<AdminCars />} />
+              <Route path="/admin/insight" element={<AdminInsight />} />
+              <Route path="/admin/reimburse" element={<AdminReimburse />} />
+              <Route path="/admin/inbox" element={<AdminInbox />} />
+              <Route path="/admin/calendar" element={<AdminCalendar />} />
+              <Route path="/admin/settings" element={<AdminSettings />} />
+              {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
+              <Route path="*" element={<NotFound />} />
+            </Routes>
+          </BrowserRouter>
+        </TooltipProvider>
+      </AuthProvider>
+    </ThemeProvider>
   </QueryClientProvider>
 );
 
