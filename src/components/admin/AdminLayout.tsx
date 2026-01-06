@@ -55,9 +55,9 @@ export const AdminLayout = ({ children }: AdminLayoutProps) => {
         {/* Logo */}
         <div className="mb-8">
           <h1 className="text-2xl font-bold cursor-pointer" onClick={() => navigate("/")}>
-            <span className="text-primary">MOR</span>
+            <span className="text-primary">FuaDI</span>
             <br />
-            <span className="text-primary">FNT</span>
+            <span className="text-primary">Rents</span>
           </h1>
         </div>
 

@@ -72,8 +72,8 @@ export default function SignIn() {
         </div>
         <div className="relative z-10 flex flex-col justify-center p-12 text-primary-foreground">
           <Link to="/" className="flex items-center gap-1 mb-8">
-            <span className="text-3xl font-bold">MOR</span>
-            <span className="text-3xl font-bold opacity-70">FNT</span>
+            <span className="text-3xl font-bold">FuaDI</span>
+            <span className="text-3xl font-bold opacity-70">Rents</span>
           </Link>
           <h1 className="text-4xl font-bold mb-4">Welcome Back!</h1>
           <p className="text-lg opacity-80 max-w-md">
@@ -88,8 +88,8 @@ export default function SignIn() {
           {/* Mobile Logo */}
           <div className="lg:hidden text-center">
             <Link to="/" className="inline-flex items-center gap-1">
-              <span className="text-2xl font-bold text-primary">MOR</span>
-              <span className="text-2xl font-bold">FNT</span>
+              <span className="text-2xl font-bold text-primary">FuaDI</span>
+              <span className="text-2xl font-bold">Rents</span>
             </Link>
           </div>
 

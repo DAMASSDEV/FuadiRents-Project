@@ -101,7 +101,7 @@ export default function SignUp() {
 
     toast({
       title: "Account created!",
-      description: "Welcome to MORFNT! You are now signed in.",
+      description: "Welcome to FuaDIRents! You are now signed in.",
     });
 
     navigate("/");
@@ -143,8 +143,8 @@ export default function SignUp() {
           {/* Mobile Logo */}
           <div className="lg:hidden text-center">
             <Link to="/" className="inline-flex items-center gap-1">
-              <span className="text-2xl font-bold text-primary">MOR</span>
-              <span className="text-2xl font-bold">FNT</span>
+              <span className="text-2xl font-bold text-primary">FuaDI</span>
+              <span className="text-2xl font-bold">Rents</span>
             </Link>
           </div>
 

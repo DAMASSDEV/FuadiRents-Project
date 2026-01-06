@@ -49,8 +49,8 @@ export function Header() {
       <div className="container flex h-16 items-center justify-between">
         {/* Logo */}
         <Link to="/" className="flex items-center gap-1">
-          <span className="text-2xl font-bold text-primary">MOR</span>
-          <span className="text-2xl font-bold text-foreground">FNT</span>
+          <span className="text-2xl font-bold text-primary">FuaDI</span>
+          <span className="text-2xl font-bold text-foreground">Rents</span>
         </Link>
 
         {/* Desktop Navigation */}

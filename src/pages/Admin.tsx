@@ -62,9 +62,9 @@ const Admin = () => {
         {/* Logo */}
         <div className="mb-8">
           <h1 className="text-2xl font-bold">
-            <span className="text-primary">MOR</span>
+            <span className="text-primary">FuaDI</span>
             <br />
-            <span className="text-primary">FNT</span>
+            <span className="text-primary">Rents</span>
           </h1>
         </div>
 

@@ -29,8 +29,8 @@ export function Footer() {
           {/* Brand */}
           <div className="space-y-4">
             <Link to="/" className="flex items-center gap-1">
-              <span className="text-2xl font-bold text-primary">MOR</span>
-              <span className="text-2xl font-bold text-foreground">FNT</span>
+              <span className="text-2xl font-bold text-primary">FuaDI</span>
+              <span className="text-2xl font-bold text-foreground">Rents</span>
             </Link>
             <p className="text-sm text-muted-foreground max-w-xs">
               Our vision is to provide convenience and help increase your sales business.
