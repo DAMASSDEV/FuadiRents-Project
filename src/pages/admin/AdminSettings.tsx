@@ -20,9 +20,9 @@ import {
 const AdminSettings = () => {
   const [profile, setProfile] = useState({
     name: "Admin User",
-    email: "admin@morfnt.com",
+    email: "admin@FuaDIRents.com",
     phone: "+62 812 3456 7890",
-    company: "MORFNT Car Rental"
+    company: "FuaDIRents"
   });
 
   const [notifications, setNotifications] = useState({

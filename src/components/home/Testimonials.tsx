@@ -7,7 +7,7 @@ const testimonials = [
     role: "CEO at Amazon",
     avatar: "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=100&h=100&fit=crop",
     rating: 5,
-    text: "We are very happy with the service from MORFNT. We got the car in perfect condition and the driver was very professional. Amazing experience!",
+    text: "We are very happy with the service from FuaDIRents. We got the car in perfect condition and the driver was very professional. Amazing experience!",
   },
   {
     id: 2,

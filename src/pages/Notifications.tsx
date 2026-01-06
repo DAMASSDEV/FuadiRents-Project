@@ -80,7 +80,7 @@ const Notifications = () => {
       id: "6",
       type: "booking",
       title: "Booking Completed",
-      message: "Thank you for using MORFNT! Rate your experience with booking #MF-123450",
+      message: "Thank you for using FuaDIRents! Rate your experience with booking #MF-123450",
       time: "3 days ago",
       read: true,
       bookingId: "MF-123450"

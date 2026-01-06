@@ -23,7 +23,7 @@ const Confirmation = () => {
           </div>
 
           <h1 className="text-3xl font-bold mb-2">Booking Confirmed!</h1>
-          <p className="text-muted-foreground mb-2">Thank you for choosing MORFNT!</p>
+          <p className="text-muted-foreground mb-2">Thank you for choosing FuaDIRents!</p>
           <p className="text-lg font-medium text-primary mb-8">
             Booking Reference: #{bookingId}
           </p>

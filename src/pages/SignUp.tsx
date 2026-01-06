@@ -84,10 +84,10 @@ export default function SignUp() {
         </div>
         <div className="relative z-10 flex flex-col justify-center p-12 text-primary-foreground">
           <Link to="/" className="flex items-center gap-1 mb-8">
-            <span className="text-3xl font-bold">MOR</span>
-            <span className="text-3xl font-bold opacity-70">FNT</span>
+            <span className="text-3xl font-bold">FuaDI</span>
+            <span className="text-3xl font-bold opacity-70">Rents</span>
           </Link>
-          <h1 className="text-4xl font-bold mb-4">Join MORFNT Today</h1>
+          <h1 className="text-4xl font-bold mb-4">Join FuadiRents Today</h1>
           <p className="text-lg opacity-80 max-w-md">
             Create an account and get access to premium car rentals, exclusive deals, and professional drivers.
           </p>

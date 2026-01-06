@@ -17,7 +17,7 @@ export function CTASection() {
             Ready to Get Started?
           </h2>
           <p className="text-lg text-primary-foreground/80 mb-8 max-w-xl mx-auto">
-            Find your perfect car today and experience the best car rental service with MORFNT.
+            Find your perfect car today and experience the best car rental service with FuaDiRents.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Link to="/catalog">
