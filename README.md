@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # 🚗 FuaDI Rents - Car Rental Platform
 
 Professional car rental web application built with React, TypeScript, and Tailwind CSS. Platform modern untuk sewa mobil dengan fitur lengkap.
@@ -374,3 +375,7 @@ Lebih banyak? Lihat [docs/DEVELOPER_GUIDE.md](./docs/README.md#-common-issues--s
 **Happy Coding! 🚀**
 
 For more information, visit the [documentation](./docs/README.md)
+=======
+# FuadiRents-Project
+Tugas Kelompok Pemrograman Website Kuliah
+>>>>>>> 08438df4b87ad0c5916bbb96bf8f043f4593e9d8
