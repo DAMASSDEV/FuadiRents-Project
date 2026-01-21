@@ -1,67 +1,113 @@
-import { MapPin, Car, UserCheck, CheckCircle } from "lucide-react";
+import { Header } from "@/components/layout/Header";
+import { Footer } from "@/components/layout/Footer";
+import { Button } from "@/components/ui/button";
+import { Card } from "@/components/ui/card";
+import {
+  Car,
+  CalendarCheck,
+  CreditCard,
+  CheckCircle2,
+  ArrowRight,
+  Search,
+} from "lucide-react";
 
-const steps = [
-  {
-    icon: MapPin,
-    title: "Choose Location",
-    description: "Select your pickup and drop-off location with date and time.",
-  },
-  {
-    icon: Car,
-    title: "Select Your Car",
-    description: "Browse our wide selection and find your perfect ride.",
-  },
-  {
-    icon: UserCheck,
-    title: "Choose Driver",
-    description: "Optional professional driver or drive yourself.",
-  },
-  {
-    icon: CheckCircle,
-    title: "Complete Booking",
-    description: "Confirm your booking and enjoy your journey.",
-  },
-];
-
-export function HowItWorks() {
+export default function HowItWorks() {
   return (
-    <section id="how-it-works" className="container py-16 lg:py-24">
-      <div className="text-center mb-12">
-        <h2 className="text-3xl font-bold mb-4">How It Works</h2>
-        <p className="text-muted-foreground max-w-2xl mx-auto">
-          Rent a car in just 4 simple steps. Quick, easy, and hassle-free.
-        </p>
-      </div>
+    <div className="min-h-screen flex flex-col bg-muted/30">
 
-      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
-        {steps.map((step, index) => (
-          <div
-            key={index}
-            className="relative text-center group"
-          >
-            {/* Connector Line */}
-            {index < steps.length - 1 && (
-              <div className="hidden lg:block absolute top-12 left-[60%] w-[80%] h-0.5 bg-border" />
-            )}
-
-            <div className="relative z-10">
-              {/* Icon */}
-              <div className="w-24 h-24 mx-auto mb-6 rounded-2xl bg-accent flex items-center justify-center transition-all duration-300 group-hover:bg-primary group-hover:shadow-lg">
-                <step.icon className="h-10 w-10 text-primary transition-colors group-hover:text-primary-foreground" />
-              </div>
-
-              {/* Step Number */}
-              <div className="absolute -top-2 -right-2 w-8 h-8 rounded-full bg-primary text-primary-foreground text-sm font-bold flex items-center justify-center left-1/2 transform translate-x-8">
-                {index + 1}
-              </div>
-
-              {/* Content */}
-              <h3 className="text-lg font-semibold mb-2">{step.title}</h3>
-              <p className="text-sm text-muted-foreground">{step.description}</p>
-            </div>
+      <main className="flex-1">
+        <div className="container py-10">
+          <div className="mb-10">
+            <h1 className="text-3xl font-bold mb-2">How It Works</h1>
+            <p className="text-muted-foreground">
+              Simple steps to rent your car with comfort & confidence
+            </p>
           </div>
-        ))}
-      </div>
-    </section>
+
+          {/* STEPS SECTION */}
+          <div className="grid md:grid-cols-4 gap-6 mb-16">
+            <Card className="p-6 text-center">
+              <div className="w-12 h-12 rounded-xl bg-primary/10 text-primary flex items-center justify-center mx-auto mb-4">
+                <Search className="w-6 h-6" />
+              </div>
+              <h3 className="font-semibold mb-2">1. Find Your Car</h3>
+              <p className="text-muted-foreground text-sm">
+                Browse and choose the car that fits your trip — daily, weekly,
+                or long-term.
+              </p>
+            </Card>
+
+            <Card className="p-6 text-center">
+              <div className="w-12 h-12 rounded-xl bg-primary/10 text-primary flex items-center justify-center mx-auto mb-4">
+                <CalendarCheck className="w-6 h-6" />
+              </div>
+              <h3 className="font-semibold mb-2">2. Select Date</h3>
+              <p className="text-muted-foreground text-sm">
+                Pick your rental start and end date. We’ll check availability in
+                real-time.
+              </p>
+            </Card>
+
+            <Card className="p-6 text-center">
+              <div className="w-12 h-12 rounded-xl bg-primary/10 text-primary flex items-center justify-center mx-auto mb-4">
+                <CreditCard className="w-6 h-6" />
+              </div>
+              <h3 className="font-semibold mb-2">3. Confirm & Pay</h3>
+              <p className="text-muted-foreground text-sm">
+                Complete your booking. No hidden fees — everything is clear
+                up-front.
+              </p>
+            </Card>
+
+            <Card className="p-6 text-center">
+              <div className="w-12 h-12 rounded-xl bg-primary/10 text-primary flex items-center justify-center mx-auto mb-4">
+                <Car className="w-6 h-6" />
+              </div>
+              <h3 className="font-semibold mb-2">4. Enjoy The Ride</h3>
+              <p className="text-muted-foreground text-sm">
+                Pick up your car or have it delivered. Drive safe & enjoy the
+                journey 🚗
+              </p>
+            </Card>
+          </div>
+
+          {/* WHY TRUST US */}
+          <div className="grid md:grid-cols-2 gap-10 items-center mb-20">
+            <div>
+              <h2 className="text-2xl font-bold mb-3">
+                Why Renting With Us Feels Easy
+              </h2>
+              <p className="text-muted-foreground mb-4">
+                We designed the rental process so you don’t have to stress about
+                paperwork, unclear pricing, or complicated steps.
+              </p>
+
+              <ul className="space-y-3">
+                <li className="flex gap-2 items-center">
+                  <CheckCircle2 className="w-4 h-4 text-primary" />
+                  Clear pricing — no hidden costs
+                </li>
+                <li className="flex gap-2 items-center">
+                  <CheckCircle2 className="w-4 h-4 text-primary" />
+                  Friendly support, real humans
+                </li>
+                <li className="flex gap-2 items-center">
+                  <CheckCircle2 className="w-4 h-4 text-primary" />
+                  Well-maintained & clean cars
+                </li>
+              </ul>
+            </div>
+
+            <img
+              src="https://images.pexels.com/photos/358070/pexels-photo-358070.jpeg"
+              className="rounded-2xl shadow-lg"
+            />
+          </div>
+
+         
+        </div>
+      </main>
+
+    </div>
   );
 }

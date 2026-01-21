@@ -19,7 +19,8 @@ export const cars: Car[] = [
     name: "Koenigsegg",
     category: "Sport",
     price: 99,
-    image: "https://images.unsplash.com/photo-1544636331-e26879cd4d9b?w=600&h=400&fit=crop",
+    image:
+      "https://images.unsplash.com/photo-1544636331-e26879cd4d9b?w=600&h=400&fit=crop",
     rating: 4.9,
     reviews: 156,
     fuel: "90L",
@@ -33,7 +34,8 @@ export const cars: Car[] = [
     category: "Sport",
     price: 80,
     originalPrice: 100,
-    image: "https://images.unsplash.com/photo-1580273916550-e323be2ae537?w=600&h=400&fit=crop",
+    image:
+      "https://images.unsplash.com/photo-1580273916550-e323be2ae537?w=600&h=400&fit=crop",
     rating: 4.8,
     reviews: 440,
     fuel: "80L",
@@ -46,7 +48,8 @@ export const cars: Car[] = [
     name: "Rolls-Royce",
     category: "Sedan",
     price: 96,
-    image: "https://images.unsplash.com/photo-1563720360172-67b8f3dce741?w=600&h=400&fit=crop",
+    image:
+      "https://images.unsplash.com/photo-1563720360172-67b8f3dce741?w=600&h=400&fit=crop",
     rating: 4.9,
     reviews: 312,
     fuel: "70L",
@@ -60,7 +63,8 @@ export const cars: Car[] = [
     category: "SUV",
     price: 72,
     originalPrice: 80,
-    image: "https://images.unsplash.com/photo-1519641471654-76ce0107ad1b?w=600&h=400&fit=crop",
+    image:
+      "https://images.unsplash.com/photo-1519641471654-76ce0107ad1b?w=600&h=400&fit=crop",
     rating: 4.6,
     reviews: 289,
     fuel: "80L",
@@ -72,7 +76,8 @@ export const cars: Car[] = [
     name: "CR-V",
     category: "SUV",
     price: 80,
-    image: "https://images.unsplash.com/photo-1568844293986-8c9a2c82ee4b?w=600&h=400&fit=crop",
+    image:
+      "https://imgs.search.brave.com/qYbf5SQ9D8rPh6ZyheQfhmhH4CjPkwvZJw7jMabBylU/rs:fit:500:0:1:0/g:ce/aHR0cHM6Ly9jZG4y/LmZvY3VzLmJnL21v/YmlsZS9waG90b3Nv/cmcvNjU1LzIvMjE3/NjI1MTgzNDMwMjM2/NTVfdmMud2VicA",
     rating: 4.7,
     reviews: 378,
     fuel: "70L",
@@ -85,7 +90,8 @@ export const cars: Car[] = [
     name: "All New Terios",
     category: "SUV",
     price: 74,
-    image: "https://images.unsplash.com/photo-1606611013016-969c19ba27bb?w=600&h=400&fit=crop",
+    image:
+      "https://images.unsplash.com/photo-1606611013016-969c19ba27bb?w=600&h=400&fit=crop",
     rating: 4.5,
     reviews: 198,
     fuel: "90L",
@@ -98,7 +104,8 @@ export const cars: Car[] = [
     category: "Hatchback",
     price: 76,
     originalPrice: 80,
-    image: "https://images.unsplash.com/photo-1609521263047-f8f205293f24?w=600&h=400&fit=crop",
+    image:
+      "https://images.unsplash.com/photo-1609521263047-f8f205293f24?w=600&h=400&fit=crop",
     rating: 4.4,
     reviews: 167,
     fuel: "70L",
@@ -110,7 +117,8 @@ export const cars: Car[] = [
     name: "New MG ZS",
     category: "SUV",
     price: 80,
-    image: "https://images.unsplash.com/photo-1552519507-da3b142c6e3d?w=600&h=400&fit=crop",
+    image:
+      "https://images.unsplash.com/photo-1552519507-da3b142c6e3d?w=600&h=400&fit=crop",
     rating: 4.6,
     reviews: 234,
     fuel: "80L",
@@ -123,7 +131,8 @@ export const cars: Car[] = [
     category: "Hatchback",
     price: 74,
     originalPrice: 80,
-    image: "https://images.unsplash.com/photo-1503376780353-7e6692767b70?w=600&h=400&fit=crop",
+    image:
+      "https://images.unsplash.com/photo-1503376780353-7e6692767b70?w=600&h=400&fit=crop",
     rating: 4.3,
     reviews: 145,
     fuel: "70L",
@@ -135,7 +144,8 @@ export const cars: Car[] = [
     name: "BMW M4",
     category: "Coupe",
     price: 95,
-    image: "https://images.unsplash.com/photo-1555215695-3004980ad54e?w=600&h=400&fit=crop",
+    image:
+      "https://images.unsplash.com/photo-1555215695-3004980ad54e?w=600&h=400&fit=crop",
     rating: 4.8,
     reviews: 267,
     fuel: "65L",
@@ -147,7 +157,8 @@ export const cars: Car[] = [
     name: "Mercedes AMG",
     category: "Sport",
     price: 110,
-    image: "https://images.unsplash.com/photo-1618843479313-40f8afb4b4d8?w=600&h=400&fit=crop",
+    image:
+      "https://images.unsplash.com/photo-1618843479313-40f8afb4b4d8?w=600&h=400&fit=crop",
     rating: 4.9,
     reviews: 189,
     fuel: "75L",
@@ -159,7 +170,8 @@ export const cars: Car[] = [
     name: "Toyota Innova",
     category: "MPV",
     price: 65,
-    image: "https://images.unsplash.com/photo-1549317661-bd32c8ce0db2?w=600&h=400&fit=crop",
+    image:
+      "https://images.unsplash.com/photo-1549317661-bd32c8ce0db2?w=600&h=400&fit=crop",
     rating: 4.5,
     reviews: 456,
     fuel: "85L",

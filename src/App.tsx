@@ -23,6 +23,9 @@ import AdminInbox from "./pages/admin/AdminInbox";
 import AdminCalendar from "./pages/admin/AdminCalendar";
 import AdminSettings from "./pages/admin/AdminSettings";
 import NotFound from "./pages/NotFound";
+import About from "./pages/About";
+import Contact from "./pages/Contact";
+import HowItWorks from "./components/home/HowItWorks";
 
 const queryClient = new QueryClient();
 
@@ -36,6 +39,9 @@ const App = () => (
           <BrowserRouter>
             <Routes>
               <Route path="/" element={<Index />} />
+              <Route path="/how-it-works" element={<HowItWorks />} />
+              <Route path="/about" element={<About />} />
+              <Route path="/contact" element={<Contact />} />
               <Route path="/catalog" element={<Catalog />} />
               <Route path="/car/:id" element={<CarDetail />} />
               <Route path="/signin" element={<SignIn />} />
@@ -43,7 +49,10 @@ const App = () => (
               <Route path="/choose-driver" element={<ChooseDriver />} />
               <Route path="/track/:bookingId" element={<TrackCar />} />
               <Route path="/payment" element={<Payment />} />
-              <Route path="/confirmation/:bookingId" element={<Confirmation />} />
+              <Route
+                path="/confirmation/:bookingId"
+                element={<Confirmation />}
+              />
               <Route path="/notifications" element={<Notifications />} />
               <Route path="/admin" element={<AdminDashboard />} />
               <Route path="/admin/cars" element={<AdminCars />} />

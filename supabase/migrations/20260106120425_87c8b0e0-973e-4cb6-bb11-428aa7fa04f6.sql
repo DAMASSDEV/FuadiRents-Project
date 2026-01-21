@@ -1,5 +1,5 @@
 -- Create app_role enum for user roles
-CREATE TYPE public.app_role AS ENUM ('admin', 'moderator', 'user');
+CREATE TYPE public.app_role AS ENUM ('admin', 'user');
 
 -- Create user_roles table for role-based access control
 CREATE TABLE public.user_roles (

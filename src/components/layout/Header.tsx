@@ -17,8 +17,8 @@ import { ThemeToggle } from "@/components/ThemeToggle";
 const navLinks = [
   { name: "Home", href: "/" },
   { name: "Catalog", href: "/catalog" },
-  { name: "About", href: "#about" },
-  { name: "How It Works", href: "#how-it-works" },
+  { name: "About", href: "/about" },
+  { name: "Contact", href: "/contact" },
 ];
 
 export function Header() {
@@ -42,7 +42,8 @@ export function Header() {
       .slice(0, 2);
   };
 
-  const userName = user?.user_metadata?.full_name || user?.email?.split("@")[0] || "User";
+  const userName =
+    user?.user_metadata?.full_name || user?.email?.split("@")[0] || "User";
 
   return (
     <header className="sticky top-0 z-50 w-full border-b border-border bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60">
@@ -63,9 +64,8 @@ export function Header() {
                 "text-sm font-medium transition-colors hover:text-primary",
                 location.pathname === link.href
                   ? "text-primary"
-                  : "text-muted-foreground"
-              )}
-            >
+                  : "text-muted-foreground",
+              )}>
               {link.name}
             </Link>
           ))}
@@ -79,13 +79,15 @@ export function Header() {
               <Bell className="h-5 w-5" />
             </Button>
           </Link>
-          
+
           {loading ? (
             <div className="h-8 w-8 animate-pulse rounded-full bg-muted" />
           ) : user ? (
             <DropdownMenu>
               <DropdownMenuTrigger asChild>
-                <Button variant="ghost" className="flex items-center gap-2 px-2">
+                <Button
+                  variant="ghost"
+                  className="flex items-center gap-2 px-2">
                   <Avatar className="h-8 w-8">
                     <AvatarImage src={user.user_metadata?.avatar_url} />
                     <AvatarFallback className="bg-primary text-primary-foreground text-xs">
@@ -117,7 +119,9 @@ export function Header() {
                   </Link>
                 </DropdownMenuItem>
                 <DropdownMenuSeparator />
-                <DropdownMenuItem onClick={handleSignOut} className="cursor-pointer text-destructive">
+                <DropdownMenuItem
+                  onClick={handleSignOut}
+                  className="cursor-pointer text-destructive">
                   <LogOut className="mr-2 h-4 w-4" />
                   Sign Out
                 </DropdownMenuItem>
@@ -129,7 +133,9 @@ export function Header() {
                 <Button variant="ghost">Sign In</Button>
               </Link>
               <Link to="/signup">
-                <Button variant="hero" size="default">Sign Up</Button>
+                <Button variant="hero" size="default">
+                  Sign Up
+                </Button>
               </Link>
             </>
           )}
@@ -138,8 +144,7 @@ export function Header() {
         {/* Mobile Menu Button */}
         <button
           className="md:hidden p-2"
-          onClick={() => setIsMenuOpen(!isMenuOpen)}
-        >
+          onClick={() => setIsMenuOpen(!isMenuOpen)}>
           {isMenuOpen ? (
             <X className="h-6 w-6" />
           ) : (
@@ -160,10 +165,9 @@ export function Header() {
                   "block py-2 text-sm font-medium transition-colors",
                   location.pathname === link.href
                     ? "text-primary"
-                    : "text-muted-foreground"
+                    : "text-muted-foreground",
                 )}
-                onClick={() => setIsMenuOpen(false)}
-              >
+                onClick={() => setIsMenuOpen(false)}>
                 {link.name}
               </Link>
             ))}
@@ -179,10 +183,14 @@ export function Header() {
                     </Avatar>
                     <div>
                       <p className="text-sm font-medium">{userName}</p>
-                      <p className="text-xs text-muted-foreground">{user.email}</p>
+                      <p className="text-xs text-muted-foreground">
+                        {user.email}
+                      </p>
                     </div>
                   </div>
-                  <Link to="/notifications" onClick={() => setIsMenuOpen(false)}>
+                  <Link
+                    to="/notifications"
+                    onClick={() => setIsMenuOpen(false)}>
                     <Button variant="outline" className="w-full justify-start">
                       <Bell className="mr-2 h-4 w-4" />
                       Notifications
@@ -200,8 +208,7 @@ export function Header() {
                     onClick={() => {
                       handleSignOut();
                       setIsMenuOpen(false);
-                    }}
-                  >
+                    }}>
                     <LogOut className="mr-2 h-4 w-4" />
                     Sign Out
                   </Button>
@@ -209,10 +216,14 @@ export function Header() {
               ) : (
                 <>
                   <Link to="/signin" onClick={() => setIsMenuOpen(false)}>
-                    <Button variant="outline" className="w-full">Sign In</Button>
+                    <Button variant="outline" className="w-full">
+                      Sign In
+                    </Button>
                   </Link>
                   <Link to="/signup" onClick={() => setIsMenuOpen(false)}>
-                    <Button variant="hero" className="w-full">Sign Up</Button>
+                    <Button variant="hero" className="w-full">
+                      Sign Up
+                    </Button>
                   </Link>
                 </>
               )}

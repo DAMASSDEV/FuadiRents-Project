@@ -3,10 +3,11 @@ import { Footer } from "@/components/layout/Footer";
 import { HeroSection } from "@/components/home/HeroSection";
 import { SearchWidget } from "@/components/home/SearchWidget";
 import { PopularCars } from "@/components/home/PopularCars";
-import { HowItWorks } from "@/components/home/HowItWorks";
+
 import { WhyChooseUs } from "@/components/home/WhyChooseUs";
 import { Testimonials } from "@/components/home/Testimonials";
 import { CTASection } from "@/components/home/CTASection";
+import HowItWorks from "@/components/home/HowItWorks";
 
 const Index = () => {
   return (
